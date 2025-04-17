@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form method="post" id="formTeste" action="mailto:contato@gmail.com">
+        <fieldset>
+            <legend>Dados pessoais:</legend>
+            <label for="formNome">Nome:</label><br />
+            <input id="formNome" type="text" name="nome" size="50" placeholder="Digite seu nome">
+
+            <br /><br />
+
+            <label for="formSigno">Signo:</label><br />
+            <input id="formSigno" type="text" name="signo" size="50" placeholder="Digite seu signo"></p>
+
+            <br />
+
+            <legend>Região:</legend>
+            <p>Selecione sua região:</p>
+            <input id="formZN" type="radio" name="regiao" value="zn">
+            <label for="forZN">Zona Norte</label>
+            <br /><br />
+            <input id="formZO" type="radio" name="regiao" value="zo">
+            <label for="formZO">Zona Oeste</label>
+            <br /><br />
+            <input id="formZL" type="radio" name="regiao" value="zl">
+            <label for="formZL">Zona Leste</label>
+            <br /><br />
+            <input id="formZS" type="radio" name="regiao" value="zs">
+            <label for="formZS">Zona Sul</label>
+        </fieldset>
+        
+        <br/><br/>
+
+        <fieldset>
+            <legend>Meio de Transporte:</legend>
+            <p>Quais são os meios de transporte que você utiliza?</p>
+            <input id="formCar" type="checkbox" name="tdt" value="carro"><!--tdt=tipo de tramsporte-->
+            <label for="formCar">Carro</label><br />
+
+            <input id="formBus" type="checkbox" name="tdt" value="onibus">
+            <label for="formBus">Ônibus</label><br />
+
+            <input id="formBike" type="checkbox" name="tdt" value="bicicleta">
+            <label for="formBike">Bicicleta</label><br />
+
+            <input id="formBoat" type="checkbox" name="tdt" value="barco">
+            <label for="formBoat">Barco</label>
+        </fieldset>
+
+        <br/><br/>
+
+        <fieldset>
+            <legend>Preferências:</legend>
+            <label for="time">Selecione seu time:</label>
+            <select id="time" name="time">
+                <option value="nenhum">Nenhum</option>
+                <option value="saopaulo">São Paulo</option>
+                <option value="corinhtians">corinhtians</option>
+                <option value="morena">Morenas</option>
+                <option value="loira">Loiras</option>
+                <option value="palmeras">Palmeiras</option>
+                <option value="flamengo">flamengo</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="psg">PSG</option>
+                <option value="LOUD">LOUD</option>
+            </select>
+
+            <br /><br />
+
+            <label for="forMarcas">Escolha sua marca:</label>
+            <input id="forMarcas" name="marca" list="marca" placeholder="Digite sua marca">
+            <datalist id="marca">
+                <option value="Adidas"></option>
+                <option value="Hugo Boss"></option>
+                <option value="Nike"></option>
+                <option value="Puma"></option>
+                <option value="Calvin Klein">Cueca</option>
+            </datalist>
+        </fieldset>
+
+
+        <br /><br />
+
+        <fieldset>
+            <legend>Reclame aqui</legend>
+               <p>Sugestões, elogios e críticas</p>
+        <textarea name="mensagem" rows="10" cols="50" placeholder="Digite sua mensagem aqui" required></textarea>
+
+        <br /><br />     
+        
+        </fieldset>
+
+        <br/>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+</html>
